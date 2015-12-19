@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type:"text/css" rel="stylesheet" href="styles/cheapo.css" >
+	<link rel="shortcut icon" type="image/gif" href="images/mail.gif" />
+	<script src="//ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/cheapo.js"></script>
+
+</head>
+
+<body>
+	<div id="main">
+	<div id="homepage">
+		<h2>Welcome to Cheapo Home</h2>
+		<button type="button" class= "button " id="open">Compose Message</button>
+		<button type="button" class= "button" id= "close">Hide Message Box</button>
+		<button type="button" class ="button" id="view" >View Users</button>
+		<button type="button" class ="button" id="hideu" >Hide Users</button>
+		<button type="button" class="button" id="logout" onclick="logout()">logout</button>
+		<div id="div1"></div>
+		<div id="register">
+			<fieldset id = "fieldset1">
+				<legend><h3>Create New Message: </h3></legend>
+				<br>
+				<div class="formstyle">
+					Subject:
+					<br>
+					<input id= "msubj"type ="text" class="form1" size="60" required>
+				</div>
+				<div class="formstyle">
+					Sender:
+					<br>
+					<input id= "msend" type ="text" class="form1" size="60" required>
+				</div>
+				<div class="formstyle">
+					Recipients:
+					<br>
+					<input id= "mrecp"type ="text" class="form1" size="60" required>
+				</div>
+				<div class="formstyle">
+					Message:
+					<div id= "textarea">
+					<textarea id="mbody" type ="text" class="form1" rows="4" cols="62" required></textarea>
+					<br>
+				</div>
+				</div>
+				<input type="button" class= "button" onclick="return sendMsg()" value="Send Message">
+			</fieldset>
+	</div>
+	</div>
+</div>
+</body>
+
+</html>

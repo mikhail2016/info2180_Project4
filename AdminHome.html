@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type:"text/css" rel="stylesheet" href="styles/cheapo.css" >
+	<link rel="shortcut icon" type="image/gif" href="images/mail.gif" />
+  <script src="//ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/cheapo.js"></script>
+
+</head>
+
+<body>
+  <div id="main">
+	<h2>Welcome to Cheapo Home</h2>
+  <button type="button" class ="button" id="open" >Open Registration Form</button>
+  <button type="button" class ="button" id="close" >Close Registration Form</button>
+  <button type="button" class ="button" id="view" >View Users</button>
+  <button type="button" class ="button" id="hideu" >Hide Users</button>
+  <button type="button" class ="button" id="logout" onclick="logout()">logout</button>
+  <div id="div1"></div>
+	<div id="register">
+ 		<h2 id="plz">Please fill out the form below: </h2>
+  			<fieldset id = "fieldset2">
+  				<legend><h3>Registration Form</h3></legend>
+  				First name:<input type="text" id="ffname"/>
+  	   			<br> </br> 
+  				Last name:<input type="text" id="flname" />
+       			<br> </br>
+       		Username:<input type="text" id="funame" />
+       			<br> </br> 
+  				Password:<input type="password" id="fpword"/>
+       			<br> </br> 
+  				Confirm Password:<input type="password" id="fconfirm"/>
+       			<br> </br> 
+   				<input class="button" type="button" onclick="return validate()" value="Add"/>
+     		</fieldset>
+	</div>
+</div>
+</body>
+
+</html>
